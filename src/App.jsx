@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './component/header/Header';
 import index from './api/index'; 
+import RoutApp from './router/RoutApp';
 
 const App = () => {
   const [name, setName] = useState('');
@@ -43,7 +44,7 @@ const App = () => {
 
   return (
     <div>
-      <Header />
+      <RoutApp/>
       <div className="form">
         <input
           onChange={(e) => setName(e.target.value)}
