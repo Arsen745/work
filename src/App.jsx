@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from './component/header/Header';
 import index from './api/index'; 
 import RoutApp from './router/RoutApp';
 
@@ -12,7 +11,7 @@ const App = () => {
 
   const handlePost = async () => {
     try {
-      const response = await index.fetchDress(name, surname, age, email, password);
+      const response = await index.fetchNew(name, surname, age, email, password);
       console.log(response, '---------post---------------');
     } catch (error) {
       console.error('Error posting data:', error);
@@ -31,7 +30,7 @@ const App = () => {
 
     const fetchDr = async () => {
       try {
-        const response = await index.fetchDress(); 
+        const response = await index.fetchNew(); 
         console.log(response, '----data------');
       } catch (error) {
         console.error('Error fetching dress data:', error);
