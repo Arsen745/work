@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react'
+import Footer from '../component/footer/Footer'
 
 const HomePage = () => {
 
   return (
-    <div>Saadat</div>
+    <div>
+
+
+      <Footer/>
+    </div>
   )
 }
 

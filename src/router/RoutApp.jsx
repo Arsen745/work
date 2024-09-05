@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
-import About from '../pages/About'
+import VacancyPage from '../pages/VacancyPage'
 
 
 const rout = [
@@ -11,10 +11,11 @@ const rout = [
     key: 'home'
   },
   {
-    path: '/about',
-    component: <About/>,
-    key: 'about'
+    path: '/vacancy',
+    component: <VacancyPage/>,
+    key: 'vacancy'
   }
+
 ]
 
 const RoutApp = () => {
