@@ -1,12 +1,18 @@
 import React from 'react'
 import VacancyContent from '../component/vacancy_content/VacancyContent'
+import { NavLink } from 'react-router-dom'
 
 const VacancyPage = () => {
   return (
-    <div>VacancyPage
+    <div>
+      <NavLink to={VacancyContent}>
 
 
-      <VacancyContent/>
+      VacancyPage
+      </NavLink>
+
+
+      {/* <VacancyContent/> */}
     </div>
   )
 }

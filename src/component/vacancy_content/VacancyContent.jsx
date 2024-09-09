@@ -8,7 +8,7 @@ const VacancyContent = () => {
 
 
   return (
-    <div>VacancyContent</div>
+    <div>VacancyContent kiuhygdfs</div>
   )
 }
 

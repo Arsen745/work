@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import VacancyPage from '../pages/VacancyPage'
+import About from '../pages/About'
 
 
 const rout = [
@@ -14,6 +15,11 @@ const rout = [
     path: '/vacancy',
     component: <VacancyPage/>,
     key: 'vacancy'
+  },
+  {
+    path: '/about',
+    component: <About/>,
+    key: 'about'
   }
 
 ]
